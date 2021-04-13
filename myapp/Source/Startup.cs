@@ -13,7 +13,7 @@ using Mitchell.Corp.EnterprisePlatform.AspNetCore;
 using Mitchell.Corp.EnterprisePlatform.Logging.Core;
 using Mitchell.CSG.CommonCore.Web;
 
-namespace Mitchell.CSG.apptest
+namespace Mitchell.CSG.myapp
 {
     public class Startup
     {
@@ -80,7 +80,7 @@ namespace Mitchell.CSG.apptest
             {
                 if (context.Request.Path.Value == "/")
                 {
-                    await context.Response.WriteAsync($"{nameof(apptest)} App Server");
+                    await context.Response.WriteAsync($"{nameof(myapp)} App Server");
                 }
                 else
                 {

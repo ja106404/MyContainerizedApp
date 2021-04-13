@@ -14,7 +14,7 @@ using Mitchell.Corp.EnterprisePlatform.Logging.NLog;
 using Mitchell.CSG.CommonCore.Web;
 using NLog.Web;
 
-namespace Mitchell.CSG.apptest
+namespace Mitchell.CSG.myapp
 {
     [ExcludeFromCodeCoverage]
     public static class Program

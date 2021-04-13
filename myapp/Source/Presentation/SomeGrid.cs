@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Mitchell.CSG.apptest.Presentation
+namespace Mitchell.CSG.myapp.Presentation
 {
     // This view model endpoint is "/api/view/somegrid".
     public class SomeGrid : IViewModelGet<IEnumerable<SomeGrid.GridDataDTO>>

@@ -3,7 +3,7 @@ LABEL stage=build
 WORKDIR /src
 COPY ./__tmp__ .
 
-RUN cd Source && dotnet publish apptest.csproj -c Release -o /home/app
+RUN cd Source && dotnet publish myapp.csproj -c Release -o /home/app
 
 FROM repo.mitchell.com/dotnet/core/aspnet:3.1.6-alpine3.12
 STOPSIGNAL SIGINT
@@ -18,5 +18,5 @@ ENV ASPNETCORE_ENVIRONMENT ${aspnetenv}
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "Mitchell.CSG.apptest.dll"]
+ENTRYPOINT ["dotnet", "Mitchell.CSG.myapp.dll"]
 

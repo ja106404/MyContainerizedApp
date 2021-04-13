@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Local"
       }
     },
-    "apptest": {
+    "myapp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

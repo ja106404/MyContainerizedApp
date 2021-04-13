@@ -3,8 +3,8 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<Company>Mitchell International, Inc.</Company>
 		<Copyright>Copyright Mitchell International, Inc. All rights reserved.</Copyright>
-		<RootNamespace>Mitchell.CSG.apptest</RootNamespace>
-		<AssemblyName>Mitchell.CSG.apptest</AssemblyName>
+		<RootNamespace>Mitchell.CSG.myapp</RootNamespace>
+		<AssemblyName>Mitchell.CSG.myapp</AssemblyName>
 		<TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
 	</PropertyGroup>
 	<ItemGroup>
