@@ -1,6 +1,7 @@
 ﻿using Mitchell.CSG.CommonCore;
 using System;
 using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace Mitchell.CSG.myapp.Presentation
@@ -8,6 +9,13 @@ namespace Mitchell.CSG.myapp.Presentation
     // This view model endpoint is "/api/view/somegrid".
     public class SomeGrid : IViewModelGet<IEnumerable<SomeGrid.GridDataDTO>>
     {
+        private readonly ILogger<SomeGrid> _logger;
+
+        public SomeGrid(ILogger<SomeGrid> logger)
+        {
+            _logger = logger;
+        }
+
         public class GridDataDTO
         {
             public string ClaimNumber { get; set; }
@@ -18,6 +26,8 @@ namespace Mitchell.CSG.myapp.Presentation
 
         public async Task<IEnumerable<GridDataDTO>> GetAsync()
         {
+            _logger.LogInformation("GetAsync called");
+
             var gridData = new List<GridDataDTO>
             {
                 new GridDataDTO { ClaimNumber = "123504", ClaimantId = "3876", ClaimantName = "Doe, John", DateOfLoss = DateTime.Now },

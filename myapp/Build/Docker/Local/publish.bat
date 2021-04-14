@@ -14,7 +14,7 @@ REM Remove existing images.
 docker rmi csg/myapp -f
 
 REM Build a new image.
-docker build -t csg/myapp -f ./Dockerfile . --build-arg aspnetenv=%env%
+docker build -t csg/myapp . --build-arg aspnetenv=%env%
 
 REM Remove intermediary build image and the local source code.
 docker image prune -f --filter label=stage=build
